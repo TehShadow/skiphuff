@@ -1,0 +1,1 @@
+Skiplist-powered file compression using bigram tokenization and Huffman-style entropy coding.

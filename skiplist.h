@@ -15,15 +15,15 @@ struct HuffNode {
 
 struct SkipNode {
     HuffNode* huff;
-    std::vector<SkipNode*> forward;
+    vector<SkipNode*> forward;
     SkipNode(HuffNode* huff, int level);
 };
 
 class SkipList {
     SkipNode* head;
     int level;
-    std::mt19937 rng;
-    std::uniform_real_distribution<> dist;
+    mt19937 rng;
+    uniform_real_distribution<> dist;
     int randomLevel();
 
 public:
